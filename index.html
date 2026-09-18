@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SpendWise banking and savings dashboard shell.">
+  <title>SpendWise | Banking & Savings Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div>
+          <strong>SpendWise</strong>
+          <span>Banking & Savings</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#overview"><span>⌂</span> Overview</a>
+        <a class="nav-item" href="#accounts"><span>▣</span> Accounts</a>
+        <a class="nav-item" href="#savings"><span>◈</span> Savings</a>
+        <a class="nav-item" href="#budgets"><span>◫</span> Budgets</a>
+        <a class="nav-item" href="#transactions"><span>↕</span> Transactions</a>
+        <a class="nav-item" href="#goals"><span>◎</span> Goals</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span>Need help?</span>
+        <a href="mailto:puotmalouyien@gmail.com">puotmalouyien@gmail.com</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Personal finance</p>
+          <h1>Good evening, Malou 👋</h1>
+          <p class="muted">Here is your banking and savings overview.</p>
+        </div>
+        <div class="profile">
+          <div class="avatar">MY</div>
+          <div>
+            <strong>Malou Yien</strong>
+            <span>Personal account</span>
+          </div>
+        </div>
+      </header>
+
+      <section id="overview" class="dashboard-grid" aria-label="Financial summary">
+        <article class="card balance-card" tabindex="0">
+          <div class="card-top"><span>Total Balance</span><span class="icon">KSh</span></div>
+          <div class="amount">KSh 248,500</div>
+          <p class="positive">↗ 8.4% <span>this month</span></p>
+        </article>
+
+        <article id="savings" class="card savings-card" tabindex="0">
+          <div class="card-top"><span>Saved This Month</span><span class="icon">＋</span></div>
+          <div class="amount">KSh 32,000</div>
+          <p class="positive">↗ 12.5% <span>vs. last month</span></p>
+        </article>
+
+        <article id="accounts" class="card" tabindex="0">
+          <div class="card-top"><span>Emergency Fund</span><span class="icon">♥</span></div>
+          <div class="amount">KSh 96,000</div>
+          <div class="progress"><span style="width:72%"></span></div>
+          <p class="muted">72% of KSh 133,000 goal</p>
+        </article>
+
+        <article id="budgets" class="card" tabindex="0">
+          <div class="card-top"><span>Monthly Budget</span><span class="icon">◫</span></div>
+          <div class="amount">KSh 41,250</div>
+          <p class="muted">KSh 18,750 remaining</p>
+          <div class="mini-bar"><span style="width:69%"></span></div>
+        </article>
+
+        <article id="goals" class="card" tabindex="0">
+          <div class="card-top"><span>Goal Progress</span><span class="icon">◎</span></div>
+          <div class="amount">KSh 180,000</div>
+          <div class="progress"><span style="width:60%"></span></div>
+          <p class="muted">60% toward your new business goal</p>
+        </article>
+
+        <article id="transactions" class="card" tabindex="0">
+          <div class="card-top"><span>Transactions</span><span class="icon">↕</span></div>
+          <div class="amount">24</div>
+          <p class="muted">18 income · 6 expenses</p>
+          <p class="positive">Net cash flow: +KSh 27,400</p>
+        </article>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">Recent activity</p><h2>Recent transactions</h2></div>
+            <a href="#transactions">View all</a>
+          </div>
+          <div class="transactions">
+            <div class="transaction"><div class="transaction-icon">↗</div><div><strong>Salary deposit</strong><span>Today · Income</span></div><b class="positive">+KSh 75,000</b></div>
+            <div class="transaction"><div class="transaction-icon">↘</div><div><strong>Rent payment</strong><span>Yesterday · Housing</span></div><b>-KSh 18,000</b></div>
+            <div class="transaction"><div class="transaction-icon">↘</div><div><strong>Groceries</strong><span>Sep 16 · Food</span></div><b>-KSh 4,250</b></div>
+          </div>
+        </article>
+
+        <article class="panel goal-panel">
+          <p class="eyebrow">Savings focus</p>
+          <h2>Business Growth Fund</h2>
+          <p class="muted">Keep building your savings consistently.</p>
+          <div class="goal-amount"><strong>KSh 180,000</strong><span>of KSh 300,000</span></div>
+          <div class="progress large"><span style="width:60%"></span></div>
+          <button type="button">Add to savings</button>
+        </article>
+      </section>
+
+      <footer>
+        <span>SpendWise Dashboard Shell</span>
+        <a href="mailto:puotmalou@gmail.com">puotmalou@gmail.com</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
